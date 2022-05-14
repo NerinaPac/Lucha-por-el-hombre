@@ -143,7 +143,6 @@ body {
     background-color:var(--grisoscuro);
 }
 
-
 @media(max-width: 780px) {
 
     .suscribite h3{
@@ -152,53 +151,3 @@ body {
         text-align: center;
     }
 }
-
-/* --------------- ACA CIERRA SUSCRIBITE ------------ */
-
-
-.noticias{
-   /*  background-color: rgb(43, 226, 137); */
-    max-width: 95%;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-}
-
-
-.noticias-articulo{
-    /* background-color:deeppink; */
-    width: 28rem;
-    height: 28rem;
-    /* transition: all 5s; */
-
-}
-
-
-.noticias-articulo img:hover{
-    transition-duration: 1s;
-    border-radius: 30%; 
-    opacity: 50%;   
-}
-
-
-.noticias-articulo-a{
-    text-decoration: none;
-    color: #060606;
-    text-align: center;
-}
-
-
-.noticias-articulo-a:hover{
-    color: var(--grisoscuro);
-}
-
-
-.noticias-articulo p{
-    text-align: center;
-}
-
-/* ---------------- ACA CIERRA NOTICIAS --------------------- */
