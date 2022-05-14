@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+
+:root {
+    --azulfuerte:#274C77;
+    --grisclaro:#E7ECEF;
+    --azulpetro:#6096BA;
+    --celeste:#A3CEF1;
+    --grisoscuro:#8B8C89;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+body {
+    background-color: var(--grisclaro);
+}
+
+
+.encabezado {
+    background-color: var(--azulfuerte);
+    max-width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    
+}
+
+
+@media(max-width: 780px) {
+    .encabezado{
+        height: 7rem;
+    }
+}
+
+/* ------------------ ACA CIERRA ENCABEZADO ---------------------- */
+
+.botonera-list{
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.botonera-list-item{
+    list-style: none;
+}
+
+
+.botonera-list-item-a{
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+        
+}
+
+
+.botonera-list-item-a:hover{
+    background-color: var(--azulpetro);
+    color: aliceblue;
+}
+
+
+/*------------- BOTONERA MEDIA QUARES  --------- */
+
+@media(max-width: 780px) {
+    .botonera-list{
+        display: block;
+    }
+
+    .botonera-list-item-a{
+       padding: 10px;
+       text-align: center;
+       margin-left: 0;
+    }
+
+}/*--------------  ACA CIERRA BOTONERA ------------- */
+
+
+.carrucel{
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.carrucel-1{
+    width: 80rem;
+    border-radius: 1%; 
+}
+ 
+/* -----------ACA CIERRA CARRUCEL ---------------- */
+
+
+/* ---------- SUSCRIBIRSE -------- */
+
+.suscribite{
+    background-image:linear-gradient(var(--grisclaro) 50%, var(--grisoscuro));
+    background-color: var(--grisclaro);
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.suscribite h3{
+    margin-right: 12rem;
+}
+
+
+.suscribite-email{
+    width: 10rem;
+}
+
+
+.suscribite-boton{
+    border-radius: 10%;
+    padding: 5px;
+}
+
+
+.suscribite-boton:hover{
+    background-color:var(--grisoscuro);
+}
+
+
+@media(max-width: 780px) {
+
+    .suscribite h3{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* --------------- ACA CIERRA SUSCRIBITE ------------ */
+
+
+.noticias{
+   /*  background-color: rgb(43, 226, 137); */
+    max-width: 95%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+
+.noticias-articulo{
+    /* background-color:deeppink; */
+    width: 28rem;
+    height: 28rem;
+    /* transition: all 5s; */
+
+}
+
+
+.noticias-articulo img:hover{
+    transition-duration: 1s;
+    border-radius: 30%; 
+    opacity: 50%;   
+}
+
+
+.noticias-articulo-a{
+    text-decoration: none;
+    color: #060606;
+    text-align: center;
+}
+
+
+.noticias-articulo-a:hover{
+    color: var(--grisoscuro);
+}
+
+
+.noticias-articulo p{
+    text-align: center;
+}
+
+/* ---------------- ACA CIERRA NOTICIAS --------------------- */
