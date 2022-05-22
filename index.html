@@ -11,10 +11,9 @@
 
     <body>
 
-        <div class="encabezado">
+        <header class="encabezado">
 
              <div class="encabezado-logo">
-                           
 
                 <h1>Movimiento por la Igualdad de Generos</h1>
 
@@ -22,18 +21,17 @@
 
             <form action="buscar.js">
 
-                <input type="text" placeholder="Que desea buscar..?" class="encabezado-busca">
-                <button type="submit" class="encabezado-boton">
+                <input type="text" placeholder="Que desea buscar..?" aria-label="Que desea buscar?" class="encabezado-busca">
+                <button type="submit" aria-label="confirmar busqueda" class="encabezado-boton">
                     <!-- agregar el atributo para que sea accesible -->
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 
-
             </form>
  
-        </div> <!----------- ACA CIERRA ENCABEZADO ------------------------------>
+        </header> <!----------- ACA CIERRA ENCABEZADO ------------------------------>
 
-        <div class="contenido">
+        <main class="contenido">
            
             <nav class="nav-botonera">
 
@@ -54,7 +52,7 @@
                     </li>
 
                     <li class="botonera-list-item">
-                        <a href="" class="botonera-list-item-a">
+                        <a href="porqueluchamos.html" class="botonera-list-item-a">
                             <i class="fa-solid fa-hand-back-fist"></i>
                            POR QUÉ LUCHAMOS? 
                         </a>
@@ -69,21 +67,96 @@
                     </li>
 
                     <li class="botonera-list-item">
-                        <a href="" class="botonera-list-item-a">
+                        <a href="contactos.html" class="botonera-list-item-a">
                             <i class="fa-regular fa-face-smile"></i>
                            CONTACTO 
                         </a>
                     </li>
 
                 </ul>
-            </nav> 
+            </nav>  <!------------ ACA CIERRA BOTONERA ------------>
             
+            
+            <!--------------- CARRUCEL  ------------->
         
             <div class="carrucel">
-                <img class="carrucel-1" src="img/hombre-depresivo.jpg" alt="violencia contra el homnbre">
 
-            </div> <!-- Aca cierra Carrucel -->
+                <section id="container-slider">
 
+                    <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </a>
+
+                    <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+
+                    <ul class="listslider">
+
+                        <li>
+                            <a itlist="itList_0" href="#" class="item-select-slid"></a>
+                        </li>
+
+                        <li>
+                            <a itlist="itList_1" href="#"></a>
+                        </li>
+
+                        <li>
+                            <a itlist="itList_2" href="#"></a>
+                        </li>
+
+                    </ul>
+                 
+                    <ul id="slider">                 
+                 
+                        <li style="background-image: url('/img/hombre-depresivo.jpg'); z-index:0; opacity: 1;">
+
+                            <div class="content_slider" >
+
+                                <div>
+
+                                    <h2>La depresion, el asesino silencioso del cual el estado es complice</h2>
+                                    <p>La depresion es una enfermedad que principalmente padecen los hombres y el estado ignora,
+                                        debido a que el hombre es un ciudadano de segunda categoria</p>
+
+                                </div>
+
+                            </div>                 
+                 
+                        </li>
+
+                        <li style="background-image: url('/img/hombre-violencia.jpg'); ">
+
+                        <div class="content_slider" >
+
+                            <div>
+                                <h2>El hombre sufre violencia de genero en igual medida que la mujer, pero unicamente es criminalizado por el estado y la sociedad</h2>
+                                <p></p>
+                            </div>
+
+                        </div>                 
+                 
+                        </li>
+                        
+                        <li style="background-image: url('img/aborto-masculino.jpg'); ">
+
+                        <div class="content_slider" >
+
+                            <div>
+                            <h2>El aborto para ellas si, para ellos NADA</h2>
+                            <p>culos</p>
+                  
+                            </div>
+                        </div>
+                        </li>
+                   </ul>
+                 </section>
+                 
+                           
+            </div>
+
+         <!------------ ACA CIERRA CARRUCEL ------------->
+            
             <div class="noticias">
 
                 <h2 id="noticias-titulo">Noticias que no se ven con frecuencia por los medios de comunicacion...</h2>
@@ -193,17 +266,16 @@
     
                     <form action="suscribirse.js">
     
-                        <input class="suscribite-email" type="email" placeholder="E-mail">
+                        <input class="suscribite-email" type="email" placeholder="E-mail" aria-label="Ingresar email">
                         <input type="button" value="Suscribirse" class="suscribite-boton">
     
                     </form>
-                <!-- Hay que agregarle un Atributo al input para que sea Accesible -->
-    
+                    
                 </div> <!--------------------- ACA CIERRA SUSCRIBITE ----------------------- -->          
 
-        </div>   <!------------------------- ACA CIERRA CONTENIDO  --------------------->
+        </main>   <!------------------------- ACA CIERRA CONTENIDO  --------------------->
 
-        <div class="piedepag">
+        <footer class="piedepag">
 
             <ul class="piedepag-lista">
 
@@ -228,10 +300,8 @@
                     </a>
                 </li>
 
-
             </ul>
-
     
-        </div>
+        </footer>
     </body>
 </html>
