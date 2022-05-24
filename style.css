@@ -54,6 +54,11 @@ body {
     }
 }
 
+.encabezado-logo-a{
+    color: black;
+    text-decoration: none;
+}
+
 .botonera-list{
     display:flex;
     justify-content: center;
@@ -104,11 +109,12 @@ body {
 /* ------------ CARRUCEL ----------------------- */
 
 .carrucel{
-    max-width: 70rem;
+    max-width: 75rem;
     margin: 1rem auto;
     padding: 2px ;
     border: 2px solid black;
     text-align: center;
+    overflow: hidden;
     
 }
 
@@ -120,7 +126,7 @@ body {
 .carrucel-text {
     background-color: var(--grisclaro);
     opacity: 50%;
-    width: 70rem;
+    width: 75rem;
     padding: 3rem;
     position: absolute;
     top: 48%;
@@ -134,13 +140,12 @@ body {
 /* -----------ACA CIERRA CARRUCEL ---------------- */
 
 .noticias{
+    text-align: center;
+    margin-top: 3rem; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
-    max-width: 90%;   
     
 }
-
 
 .noticias-relev{
     max-width: 95%;
@@ -149,16 +154,19 @@ body {
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+        
 }
 
 
 .noticias-relev-articulo{
-    /* background-color:deeppink; */
     width: 28rem;
     height: 28rem;
-    /* transition: all 5s; */
+    
 
+}
+
+.noticias-relev img{
+    height: 17rem;
 }
 
 
@@ -185,6 +193,16 @@ body {
     text-align: center;
 }
 
+.noticias-vermas{   
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:larger;
+}
+
+.noticias-vermas:hover{
+    text-decoration: underline;
+}
 
 @media(max-width: 780px){
 
@@ -207,12 +225,18 @@ body {
     }
 }
 
+
+
 /* --------ACA TERMINA NOTICIAS ------------ */
 
+
+
 .lectura{
+    margin-top: 3rem;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;
+    
 }
 
 .lectura-articulo{
@@ -230,6 +254,10 @@ body {
     width: 28rem;
     height: 28rem;
 
+}
+
+.lectura-articulo-post img{
+    height: 17rem;
 }
 
 
@@ -254,6 +282,19 @@ body {
 
 .lectura-articulo-post p{
     text-align: center;
+}
+
+.lectura-vermas{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:larger;
+    
+    
+}
+
+.lectura-vermas:hover{
+    text-decoration: underline;
 }
 
 
@@ -339,7 +380,6 @@ body {
 .piedepag-lista{
     margin: 0 auto;
     width: 25rem;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
 }
@@ -398,15 +438,31 @@ body {
     background-color: var(--celeste);
 }
 
+.contactos-contenido{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.contactos-contenido h2{
+    text-decoration: underline;
+}
+
 .cuerpo-contactos{
     margin: 2rem auto;
-    max-width: 80rem;
-    background-color: var(--celesteclaro);
-    text-align: center;    
+    max-width: 70rem;
+    background-color: var(--grisclaro);
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px;
 }
 
 .contactos-img{
     max-width: 70rem;
+    opacity: 80%;
+
     
 }
 
