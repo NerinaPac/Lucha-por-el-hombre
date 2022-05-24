@@ -210,23 +210,18 @@ body {
 /* --------ACA TERMINA NOTICIAS ------------ */
 
 .lectura{
-    /* background-color: aqua; */
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 3rem; */
     max-width: 90%;
 }
 
 .lectura-articulo{
-    /* background-color: rgb(43, 226, 137); */
     max-width: 95%;
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
 }
 
 
