@@ -20,16 +20,12 @@ html{
     --celesteclaro:rgb(207, 237, 237);
 }
 
-
 img{
     max-width: 100%;
 }
 
-
 body {
-    background-color: var(--grisclaro);
-   
-   
+    background-color: var(--grisclaro);   
     
 }
 
@@ -250,7 +246,6 @@ body {
 
 
 .lectura-articulo-post{
-    /*background-color:deeppink; */
     width: 28rem;
     height: 28rem;
 
@@ -289,7 +284,6 @@ body {
     font-weight: bold;
     text-decoration: none;
     font-size:larger;
-    
     
 }
 
@@ -493,7 +487,6 @@ body {
 
 
 .cuadrotextodenuncia{
-
 
     background-color: var(--celesteclaro);
     width: 25rem;
