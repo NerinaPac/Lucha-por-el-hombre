@@ -18,6 +18,8 @@ html{
     --celeste:#A3CEF1;
     --grisoscuro:#8B8C89;
     --celesteclaro:rgb(207, 237, 237);
+    --naranja:#e76f51;
+    --violeta:#cdb4db;
 }
 
 img{
@@ -81,15 +83,24 @@ body {
 
 /*------------- MEDIA QUARES  --------- */
 
-@media(max-width: 780px){
+@media(max-width: 820px){
+
+    .encabezado{
+        display: block;
+        position: static;
+
+    }
+   
     .botonera-list{
         display: block;
+        
     }
 
     .botonera-list-item-a{
        padding: 10px;
        text-align: center;
        margin-left: 0;
+       display: block;
     }
 
 }
@@ -118,11 +129,19 @@ body {
     padding: 2rem;
     width: 75rem;
     position: absolute;
-    top: 48%;
+    top: 55%;
     left: auto;
     right: auto;
-    
 
+}
+
+@media(max-width: 820px){
+
+   .carrucel-text{
+        max-width: 100%;
+        position: absolute;
+        top: 20%;
+    } 
 }
 
 
@@ -365,6 +384,7 @@ body {
     background-color: var(--azulfuerte);
     margin-top: 2rem;
     padding: 4rem;
+    max-width: 100%;
     
 }
 
@@ -388,11 +408,19 @@ body {
  color:var(--celeste);
 }
 
+@media(max-width: 780px){
+
+    /* .piedepag-lista{
+        max-width: 100%; */
+    
+}
+
+
 /* ========================== STYLE HTML POR QUE LUCHAMOS =========================== */
 
 .body-pqluchamos{
     background-image: url(/img/otonio.webp);
-    background-color: var(--grisclaro);
+    background-color: var(--naranja);
     background-repeat: none;
 }
 
@@ -470,7 +498,7 @@ body {
 .denuncia_body{
 
     background-image: url(/img/wallpaper-denuncia.webp);
-    background-color: var(--celesteclaro);
+    background-color: var(--violeta);
 
 
 }
