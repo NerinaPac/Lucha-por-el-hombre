@@ -44,12 +44,6 @@ body {
     
 }
 
-@media(max-width: 780px) {
-    .encabezado{
-    height: 7rem;
-    }
-}
-
 .encabezado-logo-a{
     color: black;
     text-decoration: none;
@@ -85,7 +79,7 @@ body {
 }
 
 
-/*------------- BOTONERA MEDIA QUARES  --------- */
+/*------------- MEDIA QUARES  --------- */
 
 @media(max-width: 780px){
     .botonera-list{
@@ -110,7 +104,6 @@ body {
     padding: 2px ;
     border: 2px solid black;
     text-align: center;
-    overflow: hidden;
     
 }
 
@@ -122,8 +115,8 @@ body {
 .carrucel-text {
     background-color: var(--grisclaro);
     opacity: 50%;
+    padding: 2rem;
     width: 75rem;
-    padding: 3rem;
     position: absolute;
     top: 48%;
     left: auto;
@@ -131,6 +124,8 @@ body {
     
 
 }
+
+
 
  
 /* -----------ACA CIERRA CARRUCEL ---------------- */
@@ -364,6 +359,8 @@ body {
     }
 }
 
+/* ---------------------------- FOOTER ----------------------------- */
+
 .piedepag{
     background-color: var(--azulfuerte);
     margin-top: 2rem;
@@ -394,8 +391,9 @@ body {
 /* ========================== STYLE HTML POR QUE LUCHAMOS =========================== */
 
 .body-pqluchamos{
-    background-color: var(--celeste);
-
+    background-image: url(/img/otonio.webp);
+    background-color: var(--grisclaro);
+    background-repeat: none;
 }
 
 
@@ -423,11 +421,12 @@ body {
 
 .cuadrotext-nuestralucha img{
     box-shadow: 1px 1px 1px;
+    width: 65rem;
 }
 
 
 
-/* =========== STYLE HTML CONTACTOS ================== */
+/* =========================== STYLE HTML CONTACTOS ================== */
 
 .body-contactos{
     background-color: var(--celeste);
@@ -468,21 +467,30 @@ body {
 /* ACA COMIENZA EL CSS DEL SECTOR "DENUNCIA"------------------ */
 
 
+.denuncia_body{
 
+    background-image: url(/img/wallpaper-denuncia.webp);
+    background-color: var(--celesteclaro);
+
+
+}
 
 .denuncia{
 
     text-align: center;
-
+    margin-top: 2rem;
+    font-size: 50px;
 }
 
 .denuncia-p{
 
-    padding: 4rem;
+    
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     font-weight: bold;
-    
+    margin: 2rem;
+    text-align: justify;
+
 }
 
 
@@ -490,16 +498,19 @@ body {
 
     background-color: var(--celesteclaro);
     width: 25rem;
-    height: 25rem;
-    margin-left: auto;
-    margin-right: auto;
+    height: 26rem;
+    margin: 2rem auto;
     border: 2px solid black;
-    margin-top: 2rem;
     padding: 1rem;
-    align-items:center  ;
+    box-shadow: 6px 6px 30px;
 
-
-   
 }
 
+.denuncia_enviar{
+   margin-left: 19rem;
+   padding: 2px 12px;
+   
+
+
+}
 

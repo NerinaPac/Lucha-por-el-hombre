@@ -9,7 +9,7 @@
             <script src="https://kit.fontawesome.com/1282aaad61.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="denuncia_body">
 
         <header class="encabezado">
 
@@ -68,7 +68,6 @@
 
             <h2 class="denuncia">Denuncia!</h2>
            
-           
             <p class="denuncia-p">Como hombres sabemos que es muy normal sufrir discriminaciones
                  constantemente a nivel social, ya que el mismo estado o sea el poder hegemonico
                  adopta publicamente el marco teorico feminista, motivo por el cual el varón,
@@ -84,26 +83,36 @@
 
             <div class="cuadrotextodenuncia">
 
-                <form action="enviar.js">
-                    <label> 
+                <form action="enviar.js" class="denunciaculo">
+
+                    <label class="botones_denuncia"> 
                         Nombres:
                         <input type="text">               
                     </label>
-                    </form>
-                
-                    <form action="enviar.js">
-                        <label> 
+
+                    <br><br>
+                   
+                    <label class="botones_denuncia"> 
                             Apellidos:
                             <input type="text">                   
-                        </label>    
-                        </form>
+                    </label>       
+                    
+                   <br><br>
 
-                        <label> Correo electronico:
-                            <input type="Email" required>
+                    <label class="botones_denuncia"> 
+                            E-mail:                           
+                        <input type="Email" required>
+                    </label>                  
+                    
+                  <br><br>
 
-                        </label>
-                        
-                        <textarea name="cuadrodenuncia" id="" cols="30" rows="10"></textarea>
+                    <label for="text-denuncia">Escribinos tu denuncia</label>
+                    
+                    <textarea name="cuadrodenuncia" id="text-denuncia" cols="60" rows="12" class="botones_denuncia"></textarea>
+
+                    <input type="submit" value="Enviar" class="denuncia_enviar">
+
+                 </form>
 
             </div>
 
