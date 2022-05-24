@@ -35,13 +35,16 @@ body {
 
 
 .encabezado {
-    background-color: var(--azulfuerte);    
+    background-color: var(--grisclaro);    
     max-width: 100%;
-    height: 6rem;
+    height: 5rem;
     display: flex;
     justify-content:space-around;
     align-items: center;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     
 }
 
@@ -95,19 +98,35 @@ body {
     }
 
 }
-/*--------------  ACA CIERRA BOTONERA ------------- */
-
+/* ------------------ ACA CIERRA ENCABEZADO ----------------------*/
 
 
 /* ------------ CARRUCEL ----------------------- */
 
-/* .carrucel{
-   
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
+.carrucel{
+    max-width: 70rem;
+    margin: 1rem auto;
     padding: 2px ;
     border: 2px solid black;
+    text-align: center;
+    
+}
+
+.carrucel-img{
+    opacity: 90%;
+    
+}
+
+.carrucel-text {
+    background-color: var(--grisclaro);
+    opacity: 50%;
+    width: 70rem;
+    padding: 3rem;
+    position: absolute;
+    top: 48%;
+    left: auto;
+    right: auto;
+    
 
 }
 
@@ -270,8 +289,7 @@ body {
 /* ---------- SUSCRIBIRSE -------- */
 
 .suscribite{
-    background-image:linear-gradient(var(--grisclaro) 50%, var(--grisoscuro));
-    background-color: var(--grisclaro);
+    background-image:linear-gradient(var(--grisclaro) 50%, var(--grisoscuro));    
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
@@ -400,3 +418,43 @@ body {
 .cuerpo-contactos p, h3 {
     margin-top: 1rem;
 }
+
+/* ACA COMIENZA EL CSS DEL SECTOR "DENUNCIA"------------------ */
+
+
+
+
+.denuncia{
+
+    text-align: center;
+
+}
+
+.denuncia-p{
+
+    padding: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+
+.cuadrotextodenuncia{
+
+
+    background-color: var(--celesteclaro);
+    width: 25rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items:center  ;
+
+
+   
+}
+
+
